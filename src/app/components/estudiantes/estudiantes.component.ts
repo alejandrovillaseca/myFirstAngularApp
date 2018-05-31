@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { EstudiantesServices } from '../../services/my-service.service';
+import { EstudiantesServices } from '../../../services/my-service.service';
 
 @Component({
   selector: 'app-estudiantes',
