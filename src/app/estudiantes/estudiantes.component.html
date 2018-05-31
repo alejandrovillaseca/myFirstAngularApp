@@ -1,0 +1,19 @@
+<h1>{{ titulo }}</h1>
+<!--
+<div [hidden]="listaEstudiante().length == 0">
+<div *ngIf="listaEstudiante().length > 0">-->
+<ul>
+  <li *ngFor="let estudiante of estudiantes let i = index">
+    <span (click)="clickEstudiantes($event)">{{i + 1}} - {{estudiante}}</span>
+  </li>
+</ul>
+<img [src]="imgUrl" [class]="estilo">
+<!--
+  </div>
+<div *ngIf="listaEstudiante().length > 0"></div>
+<div [hidden]="listaEstudiante().length > 0">
+  <span>No hay estudiantes</span>
+</div>
+-->
+<!--<button (click)="titulo  = ''" >Borrar titulo</button>
+<input type="text" [{ngModel}]="titulo">-->

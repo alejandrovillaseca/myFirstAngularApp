@@ -1,0 +1,19 @@
+<div>
+  {{ jugador.nombe | uppercase}} {{ jugador.apellido | lowercase}}
+  <br>
+  {{ jugador.posicion }}
+  <br>
+  {{ jugador.rut }}
+  <br>
+  {{ jugador.cumpleanos | date:'fullDate'}}
+  <br>
+  {{ jugador.salario | currency:'EUR':true }}
+</div>
+
+
+<div>
+  Temperatura Actual:
+
+  <span [ngClass]="{'text-danger': _temperatura > 30, 'text-warning': _temperatura <= 30}">{{ _temperatura | aFarenheit}}</span>
+  
+</div>
