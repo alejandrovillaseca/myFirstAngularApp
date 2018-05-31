@@ -19,8 +19,6 @@
   </li>
 </ul>
 -->
-<app-estudiantes [mi-universidad]=launiversidad (selecionado)="mostrarEstudiante($event)"></app-estudiantes>
-
 
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,6 +38,12 @@
         <li (click)="pais='Venezuela'" class="nav-item">
             <a class="nav-link" href="#">Venezuela</a>
         </li>
+        <li (click)="pais='Formularios'" class="nav-item">
+            <a class="nav-link" href="#">Formularios</a>
+        </li>
+        <li (click)="pais='Otros'" class="nav-item">
+            <a class="nav-link" href="#">Otros</a>
+        </li>
       </ul>
   </div>
 </nav>  
@@ -52,7 +56,11 @@
   <div *ngSwitchCase="'Peru'">Seleccion de futbol de Peru</div>
   <div *ngSwitchCase="'Brasil'">Seleccion de futbol de Brasil</div>
   <div *ngSwitchCase="'Venezuela'">Seleccion de futbol de Venezuela</div>
+  <div *ngSwitchCase="'Formularios'"><app-my-formulario></app-my-formulario></div>
+  <div *ngSwitchCase="'Otros'">
+    <app-estudiantes [mi-universidad]=launiversidad (selecionado)="mostrarEstudiante($event)"></app-estudiantes>  
+    <app-com-bootstrap></app-com-bootstrap>
+  </div>
 </div>
 
 
-<app-com-bootstrap></app-com-bootstrap>

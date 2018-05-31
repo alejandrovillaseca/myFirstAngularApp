@@ -6,7 +6,8 @@ import { ComBootstrapComponent } from './components/com-bootstrap/com-bootstrap.
 import { FormsModule } from '@angular/forms';
 import { MyPipeComponent } from './components/my-pipe/my-pipe.component';
 import { AFarenheitPipe } from './pipes/a-farenheit.pipe';
-import { MyComp2Component } from './components/my-comp2/my-comp2.component'
+import { MyComp2Component } from './components/my-comp2/my-comp2.component';
+import { MyFormularioComponent } from './components/my-formulario/my-formulario.component'
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MyComp2Component } from './components/my-comp2/my-comp2.component'
     ComBootstrapComponent,
     MyPipeComponent,
     AFarenheitPipe,
-    MyComp2Component
+    MyComp2Component,
+    MyFormularioComponent
   ],
   imports: [
     BrowserModule,
